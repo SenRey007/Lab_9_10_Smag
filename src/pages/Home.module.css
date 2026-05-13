@@ -1,0 +1,65 @@
+.hero {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.heroLabel {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.heroLabel::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background: var(--amber);
+}
+
+.title {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    color: var(--text);
+    margin: 0 0 12px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.titleAccent {
+    color: var(--amber);
+}
+
+.subtitle {
+    font-size: 16px;
+    color: var(--text-2);
+    margin: 0;
+    font-family: 'Crimson Pro', serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.state {
+    text-align: center;
+    padding: 80px;
+    color: var(--text-3);
+    font-size: 16px;
+    font-family: 'DM Mono', monospace;
+}
+
+.error {
+    background: var(--red-dim);
+    color: var(--red);
+    padding: 16px 20px;
+    border-radius: var(--radius);
+    font-size: 14px;
+    border: 1px solid rgba(240,82,82,0.25);
+    font-family: 'DM Mono', monospace;
+}
